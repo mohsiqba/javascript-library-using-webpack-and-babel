@@ -1,0 +1,21 @@
+{
+  "name": "javascript-library-using-webpack-and-babel",
+  "version": "1.0.8",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development webpack --config webpack/webpack.config.dev.js",
+    "bundle:edge": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js & npm version patch"
+  },
+  "keywords": [],
+  "author": "Mohsin Iqbal",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
